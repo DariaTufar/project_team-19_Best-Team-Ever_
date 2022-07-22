@@ -1,0 +1,243 @@
+.product__container {
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
+    justify-content: center;
+    margin: 0 auto;
+    
+    @media screen and (min-width:320px) {
+        max-width: 320px;   
+    }
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+margin: 0;
+}
+
+ul {
+margin: 0;
+padding-left: 0;
+}
+
+a {
+color: currentColor;
+}
+
+address {
+font-style: normal;
+}
+
+.list {
+list-style-type: none;
+margin: 0;
+padding: 0; 
+}
+
+.link {
+text-decoration: none;
+}
+
+.daria_header {
+width: 100%;
+height: 500px;
+}
+// --------------product scss==============
+
+.product {
+background-color: #E5E5E5;
+}
+
+.product__title-wrap{
+padding-top: 60px;
+padding-bottom: 140px;
+display: flex;
+flex-direction: column;
+display: flex;
+justify-content: center;
+}
+
+.product__pre-title {
+font-family: 'Titan One';
+font-style: normal;
+font-weight: 400;
+font-size: 18px;
+line-height: 1.17;
+text-align: center;
+text-transform: uppercase;
+color: #FFA5BA;
+
+}
+.product__title {
+font-family: 'Titan One';
+font-style: normal;
+font-weight: 400;
+font-size: 34px;
+line-height: 39px;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+
+color: #D41443;
+
+margin-top: 15px;
+margin-bottom: 8px;
+
+}
+.card {
+border-radius: 24px;
+display: flex;
+flex-direction: column;
+align-items: center;
+
+width: 100%;
+height: auto;
+padding-top: 140px;
+position: relative;
+margin-bottom: 140px;
+}
+
+.product__item {
+position: relative;
+}
+
+.card--ice-cream:before {
+    content: "";   
+    background: url("../images/daria_img_product_ice_cream_1.png");
+    // background-size:  auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -140px; left: 0;
+    width: 280px; height: 280px;
+    z-index: 1;
+   }
+
+.card--ice-coffee:before {
+    content: "";   
+    background: url("../images/daria_img_product_ice_cream_1.png");
+    // background-size:  auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -140px; left: 0;
+    width: 280px; height: 280px;
+    z-index: 1;
+   }
+.card--milkshakes:before {
+    content: "";   
+    background: url("../images/daria_img_product_ice_cream_1.png");
+    // background-size:  auto;
+    background-repeat: no-repeat;
+    position: absolute;
+    top: -140px; left: 0;
+    width: 280px; height: 280px;
+    z-index: 1;
+   }
+
+.card__title {
+font-family: 'Titan One';
+font-style: normal;
+font-weight: 400;
+font-size: 20px;
+line-height: 1.15x;
+text-align: center;
+letter-spacing: 0.04em;
+text-transform: uppercase;
+color: #FFFFFF;
+position: relative;
+padding-top: 20px;
+margin-bottom: 70px;
+}
+
+.card__text:before {
+content: " ";
+height: 6px;
+width: 6px;
+border-radius: 50%;
+background-color: #FFFFFF;
+
+margin-top: -32px ;
+
+display:inline;
+position:absolute;
+top: 0;
+left: 0;
+margin-top: -38px;
+margin-left: 127px;
+
+box-shadow: 
+10px 0 0 #FFFFFF,
+20px 0 0 #FFFFFF;
+z-index:3;
+
+}
+
+
+.card__text {
+font-family: 'DM Sans';
+font-style: normal;
+font-weight: 700;
+font-size: 14px;
+line-height: 1.52;
+text-align: center;
+letter-spacing: 0.04em;
+color: #FFFFFF;
+position: relative;
+}
+
+.card__icon-arrow {
+fill: #E17992;
+}
+
+.card-btn{
+border-radius: 50%;
+width: 40px;
+height: 40px;
+border: none;
+display: flex;
+align-items: center;
+justify-content: center;
+margin-top: 40px;
+margin-bottom: 40px;
+&:hover{
+    fill: blue($color: #000000);
+}
+}
+.card--ice-cream{
+background: #FFB8CA;
+}
+
+.card--ice-coffee {
+background: #F0D1A5;
+}
+
+.card--milkshakes {
+background: #C2E297;
+}
+
+.card__menu  {
+    overflow-y: scroll;
+    position: fixed;
+   
+    width: calc(100% - 10px);
+    height: 80%;
+    min-height: 480px;
+    max-height: 609px;
+    opacity: 1;
+    visibility: visible;
+    padding: 40px;
+    background-color: #ffffff;
+  
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(1) rotate(0);
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+      0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 4px;
+    transition: transform 250ms linear;
+}
